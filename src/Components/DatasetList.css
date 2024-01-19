@@ -1,0 +1,80 @@
+.dataset-list {
+  margin: 20px;
+}
+
+.refresh-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background-color: #45a049;
+}
+
+.dataset-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dataset-card {
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* or any preferred width */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.dataset-card.expanded {
+  position: absolute;
+  width: 90%; /* adjust as needed */
+  height: 80%; /* adjust as needed */
+  z-index: 10;
+  top: 10%; /* centering the card */
+  left: 5%; /* centering the card */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  overflow: auto;
+}
+
+.dataset-sample {
+  margin-top: 10px;
+  padding: 10px;
+  overflow-y: auto; /* for scrollable content */
+  max-height: 70%; /* adjust based on your need */
+}
+
+.sample-data-section {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  white-space: pre;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
