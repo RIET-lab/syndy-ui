@@ -2,7 +2,9 @@ import axios from 'axios';
 
 const API_URL = "http://SynDyS-SynDy-iXq8zOHOIHSU-1919105447.us-east-1.elb.amazonaws.com";
 
-const createDataset = async (data) => {
+const createDataset = async (topic) => {
+  const data = new FormData();
+  data.append('topic', topic);
   return axios.post(`${API_URL}/create_dataset`, data);
 };
 

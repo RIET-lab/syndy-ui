@@ -7,7 +7,7 @@ function CreateDataset() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    DataService.createDataset({ topic })
+    DataService.createDataset(topic)
       .then(response => {
         alert('Dataset creation started!');
         setTopic('');
